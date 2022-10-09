@@ -6,4 +6,4 @@
 
 # add another bind Mounts (Volumes)
 
-docker run -d -p 3000:80 --rm --name feedback-node-container -v feedback:/app/feedback -v ${PWD}:/app -v app/node_modules feedback-node:volumes
+docker run -d -p 3000:80 --name feedback-node-container -v feedback:/app/feedback -v ${PWD}:/app -v app/node_modules feedback-node:volumes

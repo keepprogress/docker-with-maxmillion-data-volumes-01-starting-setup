@@ -13,6 +13,6 @@ EXPOSE 80
 # same with -v /app/node_modules
 # VOLUMES ["/app/node_modules"]
 
-VOLUME [ "app/temp", "/app/feedback" ]
+# VOLUME [ "app/temp", "/app/feedback" ]
 
-CMD ["node", "server.js"]
+CMD [ "npm", "start"]
