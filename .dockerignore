@@ -1,3 +1,7 @@
 # ignore file or folder when RUN "COPY" command
 
 node_modules
+
+Dockerfile
+
+.git
