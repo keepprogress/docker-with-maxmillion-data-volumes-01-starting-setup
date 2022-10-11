@@ -1,0 +1,1 @@
+docker run -d -p 3000:80 --env-file --name feedback-node-container -v ${PWD}:/app -v /app/node_modules feedback-node:env
