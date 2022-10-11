@@ -6,6 +6,13 @@ COPY package.json .
 
 RUN npm install
 
+
+## ARG instruction made layer as other instructions which would re-excute other  command after it was changed.
+
+## So, don't put it at the begginning otherwise, the unnecessary npm install will run again.
+
+ARG DEFAULT_PORT=80
+
 COPY . .
 
 ENV PORT 80

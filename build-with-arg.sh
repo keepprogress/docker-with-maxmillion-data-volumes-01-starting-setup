@@ -1,0 +1,1 @@
+docker build -t feedback-node:dev --build-arg DEFAULT_PORT=8000 .
